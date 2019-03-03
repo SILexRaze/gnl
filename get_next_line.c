@@ -6,7 +6,7 @@
 /*   By: vifonne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 18:07:41 by vifonne           #+#    #+#             */
-/*   Updated: 2018/11/13 17:50:37 by vifonne          ###   ########.fr       */
+/*   Updated: 2018/11/26 15:15:44 by vifonne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ int		get_next_line(const int fd, char **line)
 
 	if (fd < 0 || !line || read(fd, 0, 0) < 0)
 		return (-1);
-	if (!save && !(save = (char*)malloc(0)))
+	if (!save && !(save = ft_strnew(0)))
 		return (-1);
 	while ((ret = read(fd, buf, BUFF_SIZE)))
 	{
