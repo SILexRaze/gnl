@@ -8,7 +8,7 @@ Get_next_line is a function that read a filedescriptor line per line.
 - Algorithms
 - Imperative programming
 
-## Goal
+## Goals
 - Filedescriptors
 - Bufferisation
 - Basic parsing
